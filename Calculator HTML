@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Calculadora</title>
+
+
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="calc.css" rel="stylesheet" />
+    <script src="Arquivos-JS/calc.js"></script>
+
+</head>
+
+
+<body>
+
+    <div class="main-calculadora">
+
+
+
+        
+        <input id="result2" type="text" class="barra-numero">
+
+
+        <div class="caixa-numeros">
+          
+
+
+
+            <button id="clear" class="numero2" onclick="limpando()" style="background-color:#c6c6c6">AC</button>
+            <button id="pot" class="numero1" onclick="pot()" style="background-color:#c6c6c6">x<sup>2</sup></button>
+            <button id="raiz" class="numero2" onclick="raiz()" style="background-color:#c6c6c6">√</button>
+            <button id="div" class="mais" onclick="divd()" style="background-color:orange;border-radius:50px">÷</button>
+            <button id="9" class="numero2" onclick="retornateclado(this.id)">9</button>
+            <button id="8" class="numero2" onclick="retornateclado(this.id)">8</button>
+            <button id="7" class="numero2" onclick="retornateclado(this.id)">7</button>
+            <button id="mult" class="numero2" onclick="mult()" style="background-color:orange;border-radius:50px">x</button>
+            <button id="6" class="numero2" onclick="retornateclado(this.id)">6</button>
+            <button id="5" class="numero2" onclick="retornateclado(this.id)">5</button>
+            <button id="4" class="numero2" onclick="retornateclado(this.id)">4</button>
+            <button id="sub" class="numero2" onclick="Sub()" style="background-color:orange;border-radius:50px">-</button>
+            <button id="3" class="numero2" onclick="retornateclado(this.id)">3</button>
+            <button id="2" class="numero2" onclick="retornateclado(this.id)">2</button>
+            <button id="1" class="numero2" onclick="retornateclado(this.id)">1</button>
+            <button id="adi" class="mais" onclick="Soma()" style="background-color:orange;border-radius:50px">+</button>
+            <button id="0" class="mais" onclick="retornateclado(this.id)" style="width:104px;border-radius:214px">0</button>
+            <button id="," class="mais" onclick="retornateclado(this.id)" style="border-radius:50px">,</button>
+
+
+            <button id="botaoigual" class="igual" onclick="clicaigual()" style="margin-top:4px;background-color:orange;border-radius:50px">=</button>
+
+
+          
+
+        </div>
+
+
+    </div>
+
+</body>
+</html>
