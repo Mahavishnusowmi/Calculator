@@ -1,0 +1,142 @@
+//Calculadora Windows
+
+
+
+var primeiroo = 0;
+var apoio = 0;
+var operador = 0;
+
+
+function retornateclado(teclinha) {
+
+
+    primeiroo = primeiroo + teclinha;
+
+    document.getElementById("result2").value = document.getElementById("result2").value + teclinha;
+
+}
+
+
+
+
+
+function Soma() {
+
+    apoio = primeiroo;
+    primeiroo = 0;
+    operador = '+';
+
+    document.getElementById("result2").value = document.getElementById("result2").value + "+";
+
+    var fimm = parseInt(primeiroo) + parseInt(apoio);
+}
+
+
+function mult() {
+
+    apoio = primeiroo;
+    primeiroo = 0;
+    operador = 'x';
+
+    document.getElementById("result2").value = document.getElementById("result2").value + "x";
+
+    var fimm = parseInt(primeiroo) + parseInt(apoio);
+}
+
+
+
+function divd() {
+
+    apoio = primeiroo;
+    primeiroo = 0;
+    operador = '/';
+
+    document.getElementById("result2").value = document.getElementById("result2").value + "÷";
+
+    var fimm = parseInt(primeiroo) + parseInt(apoio);
+}
+
+
+
+function Sub() {
+
+    apoio = primeiroo;
+    primeiroo = 0;
+    operador = '-';
+
+    document.getElementById("result2").value = document.getElementById("result2").value + "-";
+
+    var fimm = parseInt(primeiroo) + parseInt(apoio);
+}
+
+
+function pot() {
+
+    apoio = primeiroo;
+    primeiroo = 0;
+    operador = '**';
+
+    document.getElementById("result2").value = document.getElementById("result2").value + " ";
+
+    var fimm = parseInt(primeiroo) + parseInt(apoio);
+}
+
+
+function raiz() {
+
+    apoio = primeiroo;
+    primeiroo = 0;
+    operador = '√';
+
+    document.getElementById("result2").value = document.getElementById("result2").value + " ";
+
+    var fimm = parseInt(primeiroo) + parseInt(apoio);
+}
+
+function limpando() {
+
+    primeiroo = 0;
+    apoio = 0;
+    fimm = 0;
+    document.getElementById("result2").value = ''
+
+
+
+}
+
+function clicaigual() {
+
+    if (operador === '+') {
+        var fimm = parseInt(primeiroo) + parseInt(apoio);
+        document.getElementById("result2").value = fimm;
+    }
+
+
+    else if (operador === 'x') {
+        var fimm = parseInt(primeiroo) * parseInt(apoio);
+        document.getElementById("result2").value = fimm;
+    }
+
+
+    else if (operador === '/') {
+        var fimm = parseInt(apoio) / parseInt(primeiroo);
+        document.getElementById("result2").value = fimm;
+    }
+
+    else if (operador === '-') {
+        var fimm = parseInt(apoio) - parseInt(primeiroo);
+        document.getElementById("result2").value = fimm;
+    }
+
+    else if (operador === '**') {
+        var fimm = parseInt(apoio) * parseInt(apoio);
+        document.getElementById("result2").value = fimm;
+    }
+    else if (operador === '√') {
+        var fimm = parseInt(Math.sqrt(apoio));
+        document.getElementById("result2").value = fimm;
+    }
+
+
+    
+}
